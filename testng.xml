@@ -1,0 +1,8 @@
+<suite name="YandexMarket">
+    <test name="AllTests">
+        <classes>
+            <class name="tests.SearchTests"/>
+            <class name="tests.FilterTests"/>
+        </classes>
+    </test>
+</suite>

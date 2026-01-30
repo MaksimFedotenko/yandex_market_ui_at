@@ -8,10 +8,9 @@ import pages.SearchPage;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.Selenide.sleep;
 
-public class FilterTests {
+public class FilterTests extends BaseTest {
     @Test(description = "Фильтрация смартфонов по Apple")
     public void testAppleFilter() {
-        open("https://market.yandex.ru");
 
         SearchPage searchPage = new SearchPage();
         searchPage.search("смартфоны");
