@@ -22,11 +22,12 @@ public class SearchTests {
         // SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
 
         open("https://market.yandex.ru");
-        searchPage = new SearchPage();
+
     }
 
     @Test(description = "Поиск смартфонов")
     public void testSearchSmartphones() {
+        searchPage = new SearchPage();
         searchPage.search("смартфоны");
         assertTrue(searchPage.resultsVisible(), "Результаты поиска должны отображаться");
     }
